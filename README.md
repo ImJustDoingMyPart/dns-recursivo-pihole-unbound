@@ -56,8 +56,11 @@ mkdir -p /compose/data/unbound
 ```
 > Estas rutas y nombres de carpetas son solo ejemplos, lo importante es que estén las mínimas requeridas como volumen en el stack (archivo yaml), y que haya una coherencia entre las rutas señaladas en el propio stack y las que hayas creado.
 #### ⚙️ Colocar archivos de configuración
-1. unbound.conf: Debe estar en /compose/data/unbound/. 
-2. docker-compose.yml: Define los servicios de Pi-hole y Unbound, sus redes, puertos y volúmenes. Debería estar listo para desplegar sin modificarlo desde la interfaz web.
+1. unbound.conf: Debe estar en /compose/data/unbound/. Vas a ejecutar el siguiente comando en la consola/terminal y copiar el contenido de nuestro archivo (se usa clic derecho para pegar).
+```bash
+sudo nano /compose/data/unbound/unbound.conf
+```
+3. docker-compose.yml: Define los servicios de Pi-hole y Unbound, sus redes, puertos y volúmenes. Sólo vas a copiar su contenido en el siguiente paso.
 
 ### 🚀 3. Despliegue y configuración final
 Con los archivos listos, se procede a desplegar el stack desde OpenMediaVault y configurar Pi-hole.
@@ -65,8 +68,9 @@ Con los archivos listos, se procede a desplegar el stack desde OpenMediaVault y 
 #### 🧩 Desplegar el stack desde OMV
 1. Ir a Services > Compose > Files
 2. Pegar el contenido de docker-compose.yml
-3. Modificar las líneas que tengan comentarios pidiendo modificaciones (en español)
-4. Crear y desplegar el stack
+3. Ponele un nombre identificable al contenedor, como pihole-unbound
+4. Modificar las líneas que tengan comentarios pidiendo modificaciones (en español)
+5. Crear y desplegar el stack
 > ⚠️ Nota: si Pihole no levanta, editas el stack y cambias momentáneamente el valor de la línea DNS1 a
 > ``` bash
 > 1.1.1.1
@@ -80,7 +84,7 @@ Una vez que el contenedor esté corriendo,
 192.168.0.20:85
 ```
 2. Loguearte con la contraseña establecida en el stack.
-> ⚠️ Nota: si no te funciona esa contraseña, tenés que ir a la consola del host (si querés, podes hacerlo por ssh root@IP-del-host con una máquina cliente) y ejecutar
+> ⚠️ Nota: si no te funciona esa contraseña, tenés que ir a la consola/terminal del host (si querés, podes hacerlo por ssh root@IP-del-host con una máquina cliente) y ejecutar
 > ``` bash
 > docker exec -it pihole pihole setpassword
 > ```
