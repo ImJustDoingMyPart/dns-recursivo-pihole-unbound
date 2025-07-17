@@ -102,3 +102,6 @@ En cada dispositivo en el que quieras usar esta configuración (PC, teléfono, e
 
 ✅ Con esto, todos los dispositivos usarán tu nuevo sistema DNS recursivo y bloqueador de publicidad.
 
+# 🧠 ¿Cómo podría mejorarse aun más esta configuración?
+Si vas a trastear más con contenedores en el futuro, sería interesante agregar un servicio de reverse proxy, para usar URLs personalizadas en vez de acceder a los mismos mediante la IP y el puerto asignado. Además, se podría configurar el acceso mediante VPN para poder usar esta configuración cuando estés fuera de casa conectado a otro WiFi de confianza o a datos móviles. Pronto voy a subir tutoriales y configuraciones listas para ello ¡Estate atent@!
+
