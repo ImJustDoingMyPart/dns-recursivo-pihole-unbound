@@ -22,9 +22,9 @@ Además, todo el tráfico DNS pasa por tu propio servidor, y vos decidís qué p
 🧱 **Sistema autónomo y persistente**:  
 Una vez configurado, el sistema se mantiene estable incluso después de reinicios. No depende de configuraciones frágiles ni de conexiones externas para funcionar.
 
-En resumen: esta configuración te da **más privacidad, menos publicidad, mayor velocidad y control total** sobre el tráfico DNS de tu red. Y todo corre desde tu propio servidor local.
+*En resumen: esta configuración te da **más privacidad, menos publicidad, mayor velocidad y control total** sobre el tráfico DNS de tu red. Y todo corre desde tu propio servidor local.*
 
-🤔 **¿Por qué usaría esta configuración si no tengo nada que ocultar?**:
+🤔 **¿Por qué usaría esta configuración si no tengo nada que ocultar?**:  
 Todos saben lo que vamos a hacer al baño, y aun así cerramos la puerta. La privacidad no es un delito ni una sospecha: es un derecho básico.
 
 # ⚙️ Configuración paso a paso
