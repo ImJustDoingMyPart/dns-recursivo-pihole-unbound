@@ -26,7 +26,7 @@ services:
     environment:
       TZ: 'America/Argentina/Buenos_Aires' #Poné tu región, si no la sabes: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
       WEBPASSWORD: 'tu_password_segura' #Poné la password que vayas a usar
-      DNS1: '172.23.0.8#5053'
+      DNS1: '172.23.0.8#53'
     volumes:
       - '/compose/data/pihole/etc-pihole:/etc/pihole/'
       - '/compose/data/pihole/etc-dnsmasq.d:/etc/dnsmasq.d/'
